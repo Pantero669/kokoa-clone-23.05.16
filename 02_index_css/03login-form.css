@@ -1,0 +1,47 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  margin: 0px auto;
+}
+
+#login-form input {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 15px 0px 34px 0px;
+  font-size: 30px;
+}
+#login-form input:not([type="submit"]):focus {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.6);
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input[type="submit"] {
+  margin: 40px 0px;
+  padding: 25px 0px;
+  border: none;
+  border-radius: 10px;
+}
+#login-form input:focus[type="submit"] {
+  cursor: wait;
+  animation: YellowChange 3s linear infinite;
+}
+@keyframes YellowChange {
+  from {
+  }
+  50% {
+    background-color: rgba(255, 235, 59, 1);
+  }
+  to {
+  }
+}
+
+#login-form a {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+}
